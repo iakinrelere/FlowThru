@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Front Counter</h1>
+        <p>Dine-In and Carryout Ordering</p>
+    </header>
+
+    <main class="dashboard">
+        <h2>Order Type</h2>
+
+        <select id="order-type">
+            <option value="Dine-In">Dine-In</option>
+            <option value="Carryout">Carryout</option>
+        </select>
+
+        <h2>Menu</h2>
+        <div id="menu-items"></div>
+
+        <h2>Current Order</h2>
+        <div id="order-items"></div>
+
+        <h3>Total: $<span id="total">0.00</span></h3>
+
+        <button id="submit-order">Submit Order</button>
+
+        <p><a href="index.html">Back to Dashboard</a></p>
+    </main>
+
+    <script src="menu.js"></script>
+    <script src="front-counter.js"></script>
+</body>
+</html>
